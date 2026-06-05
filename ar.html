@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio</title>
+  <link rel="icon" type="image/svg+xml" href="imagenes/mee cartoon5.png">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles/style.css" />
+  <link rel="stylesheet" href="Styles/ar.css" />
+  <style>
+    
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="ilustraciones.html" class="nav-link" data-page="ilustraciones">Ilustraciones</a>
+      <a href="concept.html" class="nav-link" data-page="concept">Concept Art</a>
+      <a href="personajes.html" class="nav-link" data-page="concept">Personajes</a>
+    </div>
+    <div class="nav-center">
+      <a href="home.html" class="nav-logo">
+        <img src="imagenes/maar.png" alt="Inicio" onerror="this.style.background='#3d6e85'">
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="modelado.html" class="nav-link" data-page="modelado">Modelado 3D</a>
+      <a href="marca.html" class="nav-link" data-page="concept">Marca</a>
+      <a href="ar.html" class="nav-link active" data-page="concept">AR</a>
+      </div>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="ilustraciones.html">Ilustraciones</a>
+  <a href="concept.html">Concept Art</a>
+  <a href="personajes.html">Personajes</a>
+  <a href="modelado.html">Modelado 3D</a>
+  <a href="marca.html">Marca</a>
+  <a href="ar.html">Realidad Aumentada</a>
+</div>
+
+<header class="hero">
+  <div class="hero-text">
+    <h1 class="hero-title">Realidad Amentada</h1>
+  </div>
+</header>
+ 
+
+<main class="main-conc">
+    <div class="proj-card">
+      <div class="proj-ph"><img src="imagenes/modelado/señor nutriales.png" alt="Señor Nutriales"></div>
+      <div class="proj-label">
+        <h3>EL SEÑOR NUTRIALES</h3>
+        <div class="tags"><span class="tag">Maya</span><span class="tag">2026</span></div>
+      </div>
+      <div class="proj-overlay">
+        <span class="ov-title">El señor nutriales</span>
+        <span class="ov-desc">Es una nutria en busca de su piedra preciosa, para atesorarla para siempre.</span>
+      </div>
+    </div>
+ 
+  <!-- ── SECCIÓN INSTRUCCIONES AR ── -->
+  <div class="ar-card">
+    <section class="ar-instructions">
+      <div class="ar-instr-inner">
+ 
+    <div class="ar-instr-text">
+      <div class="ar-step-badge">¿Cómo verlo?</div>
+      <h2 class="ar-instr-title">Activa la Realidad Aumentada</h2>
+      <ol class="ar-steps">
+        <li>
+          <span class="ar-step-num">01</span>
+          <div>
+            <strong>Consigue una carta Pokémon</strong>
+            <p>Necesitas el <em>respaldo</em> de cualquier carta Pokémon (el lado con el diseño de Poké Ball).</p>
+          </div>
+        </li>
+        <li>
+          <span class="ar-step-num">02</span>
+          <div>
+            <strong>Abre el escáner</strong>
+            <p>Presiona el botón de abajo y permite el acceso a tu cámara cuando se solicite.</p>
+          </div>
+        </li>
+        <li>
+          <span class="ar-step-num">03</span>
+          <div>
+            <strong>Apunta al respaldo</strong>
+            <p>Enfoca la cámara hacia el reverso de la carta y espera a que aparezca el Señor Nutriales.</p>
+          </div>
+        </li>
+      </ol>
+      <a href="carta.html" class="ar-scan-btn">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+          <path d="M3 7V5a2 2 0 012-2h2M17 3h2a2 2 0 012 2v2M21 17v2a2 2 0 01-2 2h-2M7 21H5a2 2 0 01-2-2v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        Escanear ahora
+      </a>
+    </div>
+ 
+    <div class="ar-instr-ref">
+      <p class="ar-ref-label">Imagen de referencia</p>
+      <div class="ar-ref-frame">
+        <!-- Reemplaza este src con la imagen real del respaldo de carta si la tienes -->
+        <img
+          src="https://maalex0707.github.io/AI-MIND/carta.jpg"
+          alt="Respaldo de carta Pokémon — imagen objetivo"
+          class="ar-ref-img"
+          onerror="this.src=''; this.closest('.ar-ref-frame').classList.add('ar-ref-placeholder')"
+        />
+        <div class="ar-ref-corner ar-ref-tl"></div>
+        <div class="ar-ref-corner ar-ref-tr"></div>
+        <div class="ar-ref-corner ar-ref-bl"></div>
+        <div class="ar-ref-corner ar-ref-br"></div>
+      </div>
+      <p class="ar-ref-hint">Escanea este lado de la carta →</p>
+    </div>
+ 
+    </div>
+  </section>
+  </div>
+ 
+</main>
+
+
+<!-- ── LIGHTBOX MODAL ── -->
+<div class="lb-overlay" id="lbOverlay" role="dialog" aria-modal="true" aria-label="Visor de imagen">
+  <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Anterior">&#8249;</button>
+ 
+  <div class="lb-content">
+    <div class="lb-info">
+      <span class="lb-title" id="lbTitle"></span>
+      <span class="lb-tool"  id="lbTool"></span>
+      <button class="lb-close" id="lbClose" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="lb-img-wrap">
+      <img class="lb-img" id="lbImg" src="" alt="">
+    </div>
+    <div class="lb-hint">&#8592; &#8594; para navegar &nbsp;·&nbsp; Esc para cerrar</div>
+  </div>
+ 
+  <button class="lb-arrow lb-next" id="lbNext" aria-label="Siguiente">&#8250;</button>
+  <div class="lb-counter" id="lbCounter"></div>
+</div>
+ 
+  <button class="lb-arrow lb-next" id="lbNext" aria-label="Siguiente">&#8250;</button>
+  <div class="lb-counter" id="lbCounter"></div>
+</div>
+
+<footer>
+  <a href="https://sketchfab.com/maalgonbe" target="_blank" class="footer-icon" title="Sketchfab">
+    <img src="https://cdn.simpleicons.org/sketchfab/ffffff" alt="Sketchfab">
+  </a>
+  <a href="https://www.linkedin.com/in/marianagonzalez-ingmultimedia/" target="_blank" class="footer-icon" title="LinkedIn">
+    <img src="imagenes/linkedin.png" alt="LinkedIn">
+  </a>
+  <a href="https://www.instagram.com/_magonryu_/" target="_blank" class="footer-icon" title="Instagram">
+    <img src="imagenes/instagram.png" alt="Instagram">
+  </a>
+  <a href="https://drive.google.com/file/d/1y8BD08PcofJ04Kcs0Da0glx1WuS5yVSW/view?usp=sharing" target="_blank" class="footer-icon" title="Hoja de Vida">
+    <img src="imagenes/curriculum.png" alt="CV">
+  </a>
+  <a href="https://www.deviantart.com/mitsuki-the-ryu" target="_blank" class="footer-icon" title="DeviantArt">
+    <img src="imagenes/devianart.png" alt="DeviantArt">
+  </a>
+  <a href="https://www.artstation.com/" target="_blank" class="footer-icon" title="ArtStation">
+    <img src="imagenes/artstation.png" alt="ArtStation">
+  </a>
+  <a href="https://www.behance.net/onboarding/hirerCreative" target="_blank" class="footer-icon" title="ArtStation">
+    <img src="imagenes/behance.png" alt="Behance">
+  </a>
+</footer>
+
+<a href="contacto.html" class="wa-float" data-tip="¡Contáctame!" title="Contacto">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+    <polyline points="22,6 12,13 2,6"></polyline>
+  </svg>
+</a>
+
+<script>
+  document.getElementById('hamburger').addEventListener('click', () =>
+    document.getElementById('mobileMenu').classList.toggle('open'));
+</script>
+
+<script src="scripts/lightbox.js"></script>
+
+</body>
+</html>

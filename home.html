@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio</title>
+  <link rel="icon" type="image/svg+xml" href="imagenes/mee cartoon5.png">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="ilustraciones.html" class="nav-link" data-page="ilustraciones">Ilustraciones</a>
+      <a href="concept.html" class="nav-link" data-page="concept">Concept Art</a>
+      <a href="personajes.html" class="nav-link" data-page="concept">Personajes</a>
+    </div>
+    <div class="nav-center">
+      <a href="home.html" class="nav-logo">
+        <img src="imagenes/maar.png" alt="Inicio" onerror="this.style.background='#3d6e85'">
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="modelado.html" class="nav-link" data-page="modelado">Modelado 3D</a>
+      <a href="marca.html" class="nav-link" data-page="concept">Marca</a>
+      <a href="ar.html" class="nav-link active" data-page="concept">AR</a>
+      </div>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="ilustraciones.html">Ilustraciones</a>
+  <a href="concept.html">Concept Art</a>
+  <a href="personajes.html">Personajes</a>
+  <a href="modelado.html">Modelado 3D</a>
+  <a href="marca.html">Marca</a>
+  <a href="ar.html">Realidad Aumentada</a>
+</div>
+
+<!-- HERO: ME4.png viene del CSS como background-image -->
+<header class="hero">
+  <div class="hero-text">
+    <h1 class="hero-title">PORTAFOLIO</h1>
+    <!-- ★ Nombre solo en el home -->
+    <p class="hero-subtitle">Mariana Alexandra González Bejarano</p>
+  </div>
+</header>
+
+<main>
+
+  <div class="info-grid">
+
+    <div class="info-photo">
+      <img src="imagenes/yoo.png" alt="Foto"
+           onerror="this.style.display='none';document.getElementById('infoPh').style.display='flex'">
+      <div class="info-ph" id="infoPh" style="display:none">🖼️</div>
+    </div>
+
+    <div class="info-sobre">
+      <h2>Sobre Mí</h2>
+      <p>Soy una creadora de experiencias digitales que combina estrategia y creatividad para transformar ideas en proyectos con identidad propia. Me apasiona dar forma a conceptos visuales e interactivos que conecten con las personas y comuniquen más allá de lo estético.</p>
+    </div>
+
+    <div class="info-hab">
+      <h2>Habilidades</h2>
+      <ul class="skill-list">
+        <li>Ilustración digital</li>
+        <li>Concept Art y diseño de personajes</li>
+        <li>Modelado 3D</li>
+        <li>Diseño de marca e identidad</li>
+        <li>Storyboard y narrativa visual</li>
+        <li>Retoque fotográfico</li>
+        <li>Rigging básico</li>
+      </ul>
+    </div>
+
+    <div class="info-soft">
+      <h2>Software</h2>
+      <div class="soft-grid">
+        <div class="soft-item">
+          <img class="soft-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1280px-Adobe_Photoshop_CC_icon.svg.png" alt="PS">Photoshop
+        </div>
+        <div class="soft-item">
+          <img class="soft-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1280px-Adobe_Illustrator_CC_icon.svg.png" alt="Ai">Illustrator
+        </div>
+        <div class="soft-item">
+          <img class="soft-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIYHHwdRgN5BgsSjZKGQ_Ij5zpseo2DXl7OQ&s" alt="Blender">AdobePremier
+        </div>
+        <div class="soft-item">
+          <img class="soft-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9rEVtG7jlArrANOJUt--6qeS5BEWsyf7g4Q&s" alt="Sub">Substance
+        </div>
+        <div class="soft-item">
+          <img class="soft-icon" src="https://upload.wikimedia.org/wikipedia/commons/7/73/Calligrakrita-base.svg" alt="krita">Krita
+        </div>
+        
+        <div class="soft-item">
+          <img class="soft-icon" src="https://play-lh.googleusercontent.com/ee8GjOdx7E-lS3BBKz13LNFjTiq_SS0Ag-NpyHUJLS3iWKbGRDXhtXZz6E1TNTWX7JM" alt="CSP">Clip Studio
+        </div>
+        <div class="soft-item">
+          <img class="soft-icon" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Autodesk_Maya_version_2023_icon.jpg" alt="Maya">Maya
+        </div>
+        <div class="soft-item">
+          <img class="soft-icon" src="https://cdn11.bigcommerce.com/s-2snnk3/images/stencil/1280x1280/products/27070/510346/498Q1-WW4271-L891-1__51971.1763000777.jpg?c=2" alt="mudbox">Mudbox
+        </div>
+        
+        
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cat-grid">
+    <a href="ilustraciones.html" class="cat-card" data-page="ilustraciones">
+      <div class="cat-ph"><img src="imagenes/ilustraciones/anderytita.png" alt="Ilustraciones"></div>
+      <div class="cat-overlay">
+        <span class="ov-title">Ilustraciones</span>
+        <span class="ov-desc">Personajes, fanart y obras digitales en Photoshop y Clip Studio</span>
+      </div>
+      <div class="cat-bar">Ilustraciones</div>
+    </a>
+    <a href="concept.html" class="cat-card" data-page="concept">
+      <div class="cat-ph"><img src="imagenes/eeee.png" alt="Concept Art"></div>
+      <div class="cat-overlay">
+        <span class="ov-title">Concept Art</span>
+        <span class="ov-desc">Escenarios, ambientes y criaturas para proyectos narrativos</span>
+      </div>
+      <div class="cat-bar">Concept Art</div>
+    </a>
+    <a href="modelado.html" class="cat-card" data-page="modelado">
+      <div class="cat-ph"><img src="imagenes/modelado/MONDONGO.jpg" alt="Modelado 3D"></div>
+      <div class="cat-overlay">
+        <span class="ov-title">Modelado 3D</span>
+        <span class="ov-desc">Personajes y entornos en Blender y Maya con texturizado completo</span>
+      </div>
+      <div class="cat-bar">Modelado 3D</div>
+    </a>
+    <a href="personajes.html" class="cat-card" data-page="disenio">
+      <div class="cat-ph"><img src="imagenes/aa.png" alt="Diseño de Personajes"></div>
+      <div class="cat-overlay">
+        <span class="ov-title">Diseño de Personajes</span>
+        <span class="ov-desc">Character sheets, expresiones y referencias de personajes originales</span>
+      </div>
+      <div class="cat-bar">Diseño de Personajes</div>
+    </a>
+  </div>
+
+</main>
+
+<footer>
+  <a href="https://sketchfab.com/maalgonbe" target="_blank" class="footer-icon" title="Sketchfab">
+    <img src="https://cdn.simpleicons.org/sketchfab/ffffff" alt="Sketchfab">
+  </a>
+  <a href="https://www.linkedin.com/in/marianagonzalez-ingmultimedia/" target="_blank" class="footer-icon" title="LinkedIn">
+    <img src="imagenes/linkedin.png" alt="LinkedIn">
+  </a>
+  <a href="https://www.instagram.com/_magonryu_/" target="_blank" class="footer-icon" title="Instagram">
+    <img src="imagenes/instagram.png" alt="Instagram">
+  </a>
+  <a href="https://drive.google.com/file/d/1y8BD08PcofJ04Kcs0Da0glx1WuS5yVSW/view?usp=sharing" target="_blank" class="footer-icon" title="Hoja de Vida">
+    <img src="imagenes/curriculum.png" alt="CV">
+  </a>
+  <a href="https://www.deviantart.com/mitsuki-the-ryu" target="_blank" class="footer-icon" title="DeviantArt">
+    <img src="imagenes/devianart.png" alt="DeviantArt">
+  </a>
+  <a href="https://www.artstation.com/magonryu2" target="_blank" class="footer-icon" title="ArtStation">
+    <img src="imagenes/artstation.png" alt="ArtStation">
+  </a>
+  <a href="https://www.behance.net/marianagonzlez66" target="_blank" class="footer-icon" title="ArtStation">
+    <img src="imagenes/behance.png" alt="Behance">
+  </a>
+</footer>
+
+<a href="contacto.html" class="wa-float" data-tip="¡Contáctame!" title="Contacto">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+    <polyline points="22,6 12,13 2,6"></polyline>
+  </svg>
+</a>
+
+<script>
+  const page = window.location.pathname.split('/').pop().replace('.html','') || 'home';
+  document.querySelectorAll('[data-page]').forEach(el => {
+    if (el.dataset.page === page) el.classList.add('active');
+  });
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  });
+</script>
+<script src="scripts/drop.js"></script>
+</body>
+</html>

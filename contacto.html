@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio</title>
+  <link rel="icon" type="image/svg+xml" href="imagenes/mee cartoon5.png">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="ilustraciones.html" class="nav-link" data-page="ilustraciones">Ilustraciones</a>
+      <a href="concept.html" class="nav-link" data-page="concept">Concept Art</a>
+      <a href="personajes.html" class="nav-link" data-page="concept">Personajes</a>
+    </div>
+    <div class="nav-center">
+      <a href="home.html" class="nav-logo">
+        <img src="imagenes/maar.png" alt="Inicio" onerror="this.style.background='#3d6e85'">
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="modelado.html" class="nav-link" data-page="modelado">Modelado 3D</a>
+      <a href="marca.html" class="nav-link" data-page="concept">Marca</a>
+      <a href="ar.html" class="nav-link" data-page="concept">AR</a>
+        </div>
+      </div>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="ilustraciones.html">Ilustraciones</a>
+  <a href="concept.html">Concept Art</a>
+  <a href="modelado.html">Modelado 3D</a>
+  <div class="mobile-sub">
+    <a href="personajes.html">↳ De Personajes</a>
+    <a href="marca.html">↳ De Marca</a>
+  </div>
+</div>
+
+<!-- HERO: sin subtítulo de nombre -->
+<header class="hero">
+  <div class="hero-text">
+    <h1 class="hero-title">¡Contactame!</h1>
+  </div>
+</header>
+<main class="main-contact">
+  <div class="contact-card">
+    <p class="contact-intro-label">¿Tienes un proyecto en mente?</p>
+    <p class="contact-intro-text">Cuéntame sobre tu idea y con gusto te respondo. También puedes escribirme directamente a <a href="mailto:tu@correo.com">magonryu@gmail.com</a></p>
+    
+    <form id="contactForm" class="contact-form" action="https://formsubmit.co/magonryu@gmail.com" method="POST">
+
+      <div class="contact-row">
+        <div class="contact-field">
+          <label class="contact-label">Nombre *</label>
+          <input type="text" name="nombre" required placeholder="Tu nombre" class="contact-input">
+        </div>
+        <div class="contact-field">
+          <label class="contact-label">Correo *</label>
+          <input type="email" name="correo" required placeholder="tu@correo.com" class="contact-input">
+        </div>
+      </div>
+
+      <div class="contact-field">
+        <label class="contact-label">Tipo de proyecto</label>
+        <select name="tipo" class="contact-select">
+          <option value="">— Selecciona una opción —</option>
+          <option>Ilustración digital</option>
+          <option>Concept Art</option>
+          <option>Modelado 3D</option>
+          <option>Diseño de personajes</option>
+          <option>Manual de marca</option>
+          <option>UI / UX</option>
+          <option>Otro</option>
+        </select>
+      </div>
+
+      <div class="contact-field">
+        <label class="contact-label">Mensaje *</label>
+        <textarea name="mensaje" required rows="5" placeholder="Cuéntame sobre tu proyecto, plazos, referencias…" class="contact-textarea"></textarea>
+      </div>
+
+      <button type="submit" id="submitBtn" class="contact-submit">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+        Enviar mensaje
+      </button>
+
+      <p id="formMsg" class="contact-msg"></p>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio">
+
+    </form>
+
+  </div>
+</main>
+<footer>
+  <a href="https://sketchfab.com/maalgonbe" target="_blank" class="footer-icon" title="Sketchfab">
+    <img src="https://cdn.simpleicons.org/sketchfab/ffffff" alt="Sketchfab">
+  </a>
+  <a href="https://www.linkedin.com/in/marianagonzalez-ingmultimedia/" target="_blank" class="footer-icon" title="LinkedIn">
+    <img src="imagenes/linkedin.png" alt="LinkedIn">
+  </a>
+  <a href="https://www.instagram.com/_magonryu_/" target="_blank" class="footer-icon" title="Instagram">
+    <img src="imagenes/instagram.png" alt="Instagram">
+  </a>
+  <a href="https://drive.google.com/file/d/1y8BD08PcofJ04Kcs0Da0glx1WuS5yVSW/view?usp=sharing" target="_blank" class="footer-icon" title="Hoja de Vida">
+    <img src="imagenes/curriculum.png" alt="CV">
+  </a>
+  <a href="https://www.deviantart.com/mitsuki-the-ryu" target="_blank" class="footer-icon" title="DeviantArt">
+    <img src="imagenes/devianart.png" alt="DeviantArt">
+  </a>
+  <a href="https://www.artstation.com/magonryu2" target="_blank" class="footer-icon" title="ArtStation">
+    <img src="imagenes/artstation.png" alt="ArtStation">
+  </a>
+  <a href="https://www.behance.net/marianagonzlez66" target="_blank" class="footer-icon" title="Behance">
+    <img src="imagenes/behance.png" alt="Behance">
+  </a>
+</footer>
+
+<a href="contacto.html" class="wa-float" data-tip="¡Contáctame!" title="Contacto">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+    <polyline points="22,6 12,13 2,6"></polyline>
+  </svg>
+</a>
+
+<script>
+  document.getElementById('hamburger').addEventListener('click', () =>
+    document.getElementById('mobileMenu').classList.toggle('open'));
+  document.querySelectorAll(".dropbtn").forEach(btn => {
+    btn.addEventListener("click", function(e) {
+      e.stopPropagation();
+      const content = this.nextElementSibling;
+      const isOpen = content.classList.contains("open");
+      document.querySelectorAll(".dropdown-content.open").forEach(d => d.classList.remove("open"));
+      if (!isOpen) content.classList.add("open");
+    });
+  });
+  document.addEventListener("click", () => {
+    document.querySelectorAll(".dropdown-content.open").forEach(d => d.classList.remove("open"));
+  });
+</script>
+<script>
+</script>
+
+<script src="scripts/drop.js"></script>
+
+</body>
+</html>
